@@ -1,0 +1,582 @@
+
+*** Running vivado
+    with args -log testbench.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source testbench.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source testbench.tcl -notrace
+Command: synth_design -top testbench -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1240 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 470.547 ; gain = 179.809
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'testbench' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/testbench.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PC' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (1#1) [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PCadder' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'PCadder' (2#1) [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:36]
+INFO: [Synth 8-6157] synthesizing module 'InstructionMemory' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:50]
+INFO: [Synth 8-6155] done synthesizing module 'InstructionMemory' (3#1) [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:50]
+INFO: [Synth 8-6157] synthesizing module 'IF' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'IF' (4#1) [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:70]
+INFO: [Synth 8-6157] synthesizing module 'ControlUnit' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:141]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:157]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:150]
+INFO: [Synth 8-6155] done synthesizing module 'ControlUnit' (5#1) [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:141]
+INFO: [Synth 8-6157] synthesizing module 'registerFile' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:82]
+INFO: [Synth 8-6155] done synthesizing module 'registerFile' (6#1) [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:82]
+INFO: [Synth 8-6157] synthesizing module 'ID' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:213]
+INFO: [Synth 8-6155] done synthesizing module 'ID' (7#1) [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:213]
+INFO: [Synth 8-6157] synthesizing module 'addressMux' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:122]
+INFO: [Synth 8-6155] done synthesizing module 'addressMux' (8#1) [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:122]
+INFO: [Synth 8-6157] synthesizing module 'signExtend' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:112]
+INFO: [Synth 8-6155] done synthesizing module 'signExtend' (9#1) [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:112]
+INFO: [Synth 8-6157] synthesizing module 'ALUmux' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:227]
+INFO: [Synth 8-6155] done synthesizing module 'ALUmux' (10#1) [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:227]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:246]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:252]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (11#1) [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:246]
+INFO: [Synth 8-6157] synthesizing module 'EXE' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:275]
+INFO: [Synth 8-6155] done synthesizing module 'EXE' (12#1) [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:275]
+INFO: [Synth 8-6157] synthesizing module 'DataMem' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:286]
+INFO: [Synth 8-6155] done synthesizing module 'DataMem' (13#1) [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:286]
+INFO: [Synth 8-6157] synthesizing module 'MEM' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:316]
+INFO: [Synth 8-6155] done synthesizing module 'MEM' (14#1) [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:316]
+INFO: [Synth 8-6157] synthesizing module 'writeBackMux' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:329]
+INFO: [Synth 8-6155] done synthesizing module 'writeBackMux' (15#1) [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:329]
+WARNING: [Synth 8-689] width (32) of port connection 'wALUout' does not match port width (1) of module 'writeBackMux' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/testbench.v:64]
+WARNING: [Synth 8-689] width (32) of port connection 'wDout' does not match port width (1) of module 'writeBackMux' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/testbench.v:64]
+WARNING: [Synth 8-85] always block has no event control specified [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/testbench.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'testbench' (16#1) [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/testbench.v:23]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 590.375 ; gain = 299.637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 590.375 ; gain = 299.637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 590.375 ; gain = 299.637
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-5546] ROM "IM" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'wreg_reg' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:155]
+WARNING: [Synth 8-327] inferring latch for variable 'm2reg_reg' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:154]
+WARNING: [Synth 8-327] inferring latch for variable 'wmem_reg' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:156]
+WARNING: [Synth 8-327] inferring latch for variable 'aluc_reg' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:159]
+WARNING: [Synth 8-327] inferring latch for variable 'aluimm_reg' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:153]
+WARNING: [Synth 8-327] inferring latch for variable 'regrt_reg' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:152]
+WARNING: [Synth 8-327] inferring latch for variable 'r_reg' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:254]
+WARNING: [Synth 8-327] inferring latch for variable 'do_reg' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:311]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[0]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[1]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[2]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[3]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[4]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[5]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[6]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[7]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[8]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[9]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[10]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[11]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[12]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[13]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[14]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[15]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[16]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[17]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[18]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[19]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[20]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[21]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[22]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[23]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[24]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[25]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[26]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[27]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[28]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[29]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[30]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[31]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[32]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[33]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[34]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[35]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[36]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[37]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[38]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[39]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[40]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[41]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[42]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[43]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[44]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[45]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[46]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[47]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[48]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[49]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[50]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[51]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[52]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[53]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[54]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[55]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[56]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[57]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[58]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[59]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[60]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[61]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[62]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[63]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[64]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[65]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[66]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[67]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[68]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[69]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[70]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[71]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[72]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[73]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[74]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[75]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[76]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[77]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[78]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[79]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[80]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[81]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[82]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[83]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[84]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[85]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[86]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[87]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[88]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[89]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[90]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+WARNING: [Synth 8-327] inferring latch for variable 'DF_reg[91]' [C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.srcs/sources_1/new/part1.v:308]
+INFO: [Common 17-14] Message 'Synth 8-327' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 745.910 ; gain = 455.172
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------+------------+----------+
+|      |RTL Partition      |Replication |Instances |
++------+-------------------+------------+----------+
+|1     |muxpart__5_DataMem |           1|     32736|
+|2     |DataMem__GB1       |           1|      7776|
+|3     |DataMem__GB2       |           1|     10144|
+|4     |DataMem__GB3       |           1|     13032|
+|5     |DataMem__GB4       |           1|     19458|
+|6     |DataMem__GB5       |           1|     25197|
+|7     |DataMem__GB6       |           1|     31543|
+|8     |testbench__GC0     |           1|      1216|
++------+-------------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
++---Registers : 
+	              109 Bit    Registers := 1     
+	               72 Bit    Registers := 1     
+	               71 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
++---Muxes : 
+	   5 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   7 Input     32 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 12    
+	   5 Input      1 Bit        Muxes := 5     
+	   6 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module DataMem 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 10    
+Module PC 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module PCadder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module InstructionMemory 
+Detailed RTL Component Info : 
++---Muxes : 
+	   5 Input     32 Bit        Muxes := 1     
+Module IF 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module ControlUnit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+Module ID 
+Detailed RTL Component Info : 
++---Registers : 
+	              109 Bit    Registers := 1     
+Module addressMux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module ALUmux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   7 Input     32 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+Module EXE 
+Detailed RTL Component Info : 
++---Registers : 
+	               72 Bit    Registers := 1     
+Module MEM 
+Detailed RTL Component Info : 
++---Registers : 
+	               71 Bit    Registers := 1     
+Module writeBackMux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'i_0/IF_tb/instructionOut_reg[18]' (FD) to 'i_0/IF_tb/instructionOut_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_0/IF_tb/instructionOut_reg[19]' (FD) to 'i_0/IF_tb/instructionOut_reg[30]'
+INFO: [Synth 8-3886] merging instance 'i_0/IF_tb/instructionOut_reg[25]' (FD) to 'i_0/IF_tb/instructionOut_reg[30]'
+INFO: [Synth 8-3886] merging instance 'i_0/IF_tb/instructionOut_reg[24]' (FD) to 'i_0/IF_tb/instructionOut_reg[30]'
+INFO: [Synth 8-3886] merging instance 'i_0/IF_tb/instructionOut_reg[23]' (FD) to 'i_0/IF_tb/instructionOut_reg[30]'
+INFO: [Synth 8-3886] merging instance 'i_0/IF_tb/instructionOut_reg[22]' (FD) to 'i_0/IF_tb/instructionOut_reg[30]'
+INFO: [Synth 8-3886] merging instance 'i_0/IF_tb/instructionOut_reg[20]' (FD) to 'i_0/IF_tb/instructionOut_reg[30]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_2/\IF_tb/instructionOut_reg_rep_bsel[21] )
+INFO: [Synth 8-3886] merging instance 'i_0/i_2/IF_tb/instructionOut_reg_rep_bsel[22]' (FD) to 'i_0/i_2/IF_tb/instructionOut_reg_rep_bsel[20]'
+INFO: [Synth 8-3886] merging instance 'i_0/i_2/IF_tb/instructionOut_reg_rep_bsel[23]' (FD) to 'i_0/i_2/IF_tb/instructionOut_reg_rep_bsel[20]'
+INFO: [Synth 8-3886] merging instance 'i_0/i_2/IF_tb/instructionOut_reg_rep_bsel[24]' (FD) to 'i_0/i_2/IF_tb/instructionOut_reg_rep_bsel[20]'
+INFO: [Synth 8-3886] merging instance 'i_0/i_2/IF_tb/instructionOut_reg_rep_bsel[25]' (FD) to 'i_0/i_2/IF_tb/instructionOut_reg_rep_bsel[20]'
+INFO: [Synth 8-3886] merging instance 'i_0/MEM_tb/MEMout_reg[32]' (FD) to 'i_0/EXE_tb/exeOut_reg[32]'
+INFO: [Synth 8-3886] merging instance 'i_0/i_2/IF_tb/instructionOut_reg_rep_bsel[19]' (FD) to 'i_0/i_2/IF_tb/instructionOut_reg_rep_bsel[20]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\IF_tb/instructionOut_reg_rep_bsel[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ControlUnit_tb/aluc_reg[3] )
+INFO: [Synth 8-3886] merging instance 'i_0/IF_tb/instructionOut_reg[0]' (FD) to 'i_0/ID_tb/IDout_reg[105]'
+INFO: [Synth 8-3886] merging instance 'i_0/IF_tb/instructionOut_reg[1]' (FD) to 'i_0/ID_tb/IDout_reg[105]'
+INFO: [Synth 8-3886] merging instance 'i_0/IF_tb/instructionOut_reg[4]' (FD) to 'i_0/ID_tb/IDout_reg[105]'
+INFO: [Synth 8-3886] merging instance 'i_0/IF_tb/instructionOut_reg[5]' (FD) to 'i_0/ID_tb/IDout_reg[105]'
+INFO: [Synth 8-3886] merging instance 'i_0/IF_tb/instructionOut_reg[6]' (FD) to 'i_0/ID_tb/IDout_reg[105]'
+INFO: [Synth 8-3886] merging instance 'i_0/IF_tb/instructionOut_reg[7]' (FD) to 'i_0/ID_tb/IDout_reg[105]'
+INFO: [Synth 8-3886] merging instance 'i_0/IF_tb/instructionOut_reg[8]' (FD) to 'i_0/ID_tb/IDout_reg[105]'
+INFO: [Synth 8-3886] merging instance 'i_0/IF_tb/instructionOut_reg[9]' (FD) to 'i_0/ID_tb/IDout_reg[105]'
+INFO: [Synth 8-3886] merging instance 'i_0/IF_tb/instructionOut_reg[10]' (FD) to 'i_0/ID_tb/IDout_reg[105]'
+INFO: [Synth 8-3886] merging instance 'i_0/IF_tb/instructionOut_reg[11]' (FD) to 'i_0/ID_tb/IDout_reg[105]'
+INFO: [Synth 8-3886] merging instance 'i_0/IF_tb/instructionOut_reg[12]' (FD) to 'i_0/ID_tb/IDout_reg[105]'
+INFO: [Synth 8-3886] merging instance 'i_0/IF_tb/instructionOut_reg[13]' (FD) to 'i_0/ID_tb/IDout_reg[105]'
+INFO: [Synth 8-3886] merging instance 'i_0/IF_tb/instructionOut_reg[14]' (FD) to 'i_0/ID_tb/IDout_reg[105]'
+INFO: [Synth 8-3886] merging instance 'i_0/IF_tb/instructionOut_reg[15]' (FD) to 'i_0/ID_tb/IDout_reg[105]'
+INFO: [Synth 8-3886] merging instance 'i_0/IF_tb/instructionOut_reg[28]' (FD) to 'i_0/ID_tb/IDout_reg[105]'
+INFO: [Synth 8-3886] merging instance 'i_0/IF_tb/instructionOut_reg[30]' (FD) to 'i_0/ID_tb/IDout_reg[105]'
+INFO: [Synth 8-3886] merging instance 'i_0/IF_tb/instructionOut_reg[31]' (FD) to 'i_0/IF_tb/instructionOut_reg[27]'
+INFO: [Synth 8-3886] merging instance 'i_0/IF_tb/instructionOut_reg[21]' (FD) to 'i_0/IF_tb/instructionOut_reg[27]'
+INFO: [Synth 8-3886] merging instance 'i_0/IF_tb/instructionOut_reg[27]' (FD) to 'i_0/IF_tb/instructionOut_reg[26]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\IF_tb/instructionOut_reg[26] )
+INFO: [Synth 8-3886] merging instance 'i_0/IF_tb/instructionOut_reg[29]' (FD) to 'i_0/ID_tb/IDout_reg[105]'
+INFO: [Synth 8-3886] merging instance 'i_0/ID_tb/IDout_reg[0]' (FD) to 'i_0/ID_tb/IDout_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/ID_tb/IDout_reg[1]' (FD) to 'i_0/ID_tb/IDout_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/ID_tb/IDout_reg[4]' (FD) to 'i_0/ID_tb/IDout_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/ID_tb/IDout_reg[5]' (FD) to 'i_0/ID_tb/IDout_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/ID_tb/IDout_reg[6]' (FD) to 'i_0/ID_tb/IDout_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/ID_tb/IDout_reg[7]' (FD) to 'i_0/ID_tb/IDout_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/ID_tb/IDout_reg[8]' (FD) to 'i_0/ID_tb/IDout_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/ID_tb/IDout_reg[9]' (FD) to 'i_0/ID_tb/IDout_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/ID_tb/IDout_reg[10]' (FD) to 'i_0/ID_tb/IDout_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/ID_tb/IDout_reg[11]' (FD) to 'i_0/ID_tb/IDout_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/ID_tb/IDout_reg[12]' (FD) to 'i_0/ID_tb/IDout_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/ID_tb/IDout_reg[13]' (FD) to 'i_0/ID_tb/IDout_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/ID_tb/IDout_reg[14]' (FD) to 'i_0/ID_tb/IDout_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/ID_tb/IDout_reg[15]' (FD) to 'i_0/ID_tb/IDout_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/ID_tb/IDout_reg[16]' (FD) to 'i_0/ID_tb/IDout_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/ID_tb/IDout_reg[17]' (FD) to 'i_0/ID_tb/IDout_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/ID_tb/IDout_reg[18]' (FD) to 'i_0/ID_tb/IDout_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/ID_tb/IDout_reg[19]' (FD) to 'i_0/ID_tb/IDout_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/ID_tb/IDout_reg[20]' (FD) to 'i_0/ID_tb/IDout_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/ID_tb/IDout_reg[21]' (FD) to 'i_0/ID_tb/IDout_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/ID_tb/IDout_reg[22]' (FD) to 'i_0/ID_tb/IDout_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/ID_tb/IDout_reg[23]' (FD) to 'i_0/ID_tb/IDout_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/ID_tb/IDout_reg[24]' (FD) to 'i_0/ID_tb/IDout_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/ID_tb/IDout_reg[25]' (FD) to 'i_0/ID_tb/IDout_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/ID_tb/IDout_reg[26]' (FD) to 'i_0/ID_tb/IDout_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/ID_tb/IDout_reg[27]' (FD) to 'i_0/ID_tb/IDout_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/ID_tb/IDout_reg[28]' (FD) to 'i_0/ID_tb/IDout_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/ID_tb/IDout_reg[29]' (FD) to 'i_0/ID_tb/IDout_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/ID_tb/IDout_reg[30]' (FD) to 'i_0/ID_tb/IDout_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/MEM_tb/MEMout_reg[33]' (FD) to 'i_0/EXE_tb/exeOut_reg[33]'
+INFO: [Synth 8-3886] merging instance 'i_0/MEM_tb/MEMout_reg[34]' (FD) to 'i_0/EXE_tb/exeOut_reg[34]'
+INFO: [Synth 8-3886] merging instance 'i_0/MEM_tb/MEMout_reg[35]' (FD) to 'i_0/EXE_tb/exeOut_reg[35]'
+INFO: [Synth 8-3886] merging instance 'i_0/MEM_tb/MEMout_reg[36]' (FD) to 'i_0/EXE_tb/exeOut_reg[36]'
+INFO: [Synth 8-3886] merging instance 'i_0/MEM_tb/MEMout_reg[37]' (FD) to 'i_0/EXE_tb/exeOut_reg[37]'
+INFO: [Synth 8-3886] merging instance 'i_0/MEM_tb/MEMout_reg[38]' (FD) to 'i_0/EXE_tb/exeOut_reg[38]'
+INFO: [Synth 8-3886] merging instance 'i_0/MEM_tb/MEMout_reg[39]' (FD) to 'i_0/EXE_tb/exeOut_reg[39]'
+INFO: [Synth 8-3886] merging instance 'i_0/MEM_tb/MEMout_reg[40]' (FD) to 'i_0/EXE_tb/exeOut_reg[40]'
+INFO: [Synth 8-3886] merging instance 'i_0/MEM_tb/MEMout_reg[41]' (FD) to 'i_0/EXE_tb/exeOut_reg[41]'
+INFO: [Synth 8-3886] merging instance 'i_0/MEM_tb/MEMout_reg[42]' (FD) to 'i_0/EXE_tb/exeOut_reg[42]'
+INFO: [Synth 8-3886] merging instance 'i_0/MEM_tb/MEMout_reg[43]' (FD) to 'i_0/EXE_tb/exeOut_reg[43]'
+INFO: [Synth 8-3886] merging instance 'i_0/MEM_tb/MEMout_reg[44]' (FD) to 'i_0/EXE_tb/exeOut_reg[44]'
+INFO: [Synth 8-3886] merging instance 'i_0/MEM_tb/MEMout_reg[45]' (FD) to 'i_0/EXE_tb/exeOut_reg[45]'
+INFO: [Synth 8-3886] merging instance 'i_0/MEM_tb/MEMout_reg[46]' (FD) to 'i_0/EXE_tb/exeOut_reg[46]'
+INFO: [Synth 8-3886] merging instance 'i_0/MEM_tb/MEMout_reg[47]' (FD) to 'i_0/EXE_tb/exeOut_reg[47]'
+INFO: [Synth 8-3886] merging instance 'i_0/MEM_tb/MEMout_reg[48]' (FD) to 'i_0/EXE_tb/exeOut_reg[48]'
+INFO: [Synth 8-3886] merging instance 'i_0/MEM_tb/MEMout_reg[49]' (FD) to 'i_0/EXE_tb/exeOut_reg[49]'
+INFO: [Synth 8-3886] merging instance 'i_0/MEM_tb/MEMout_reg[50]' (FD) to 'i_0/EXE_tb/exeOut_reg[50]'
+INFO: [Synth 8-3886] merging instance 'i_0/MEM_tb/MEMout_reg[51]' (FD) to 'i_0/EXE_tb/exeOut_reg[51]'
+INFO: [Synth 8-3886] merging instance 'i_0/MEM_tb/MEMout_reg[52]' (FD) to 'i_0/EXE_tb/exeOut_reg[52]'
+INFO: [Synth 8-3886] merging instance 'i_0/MEM_tb/MEMout_reg[53]' (FD) to 'i_0/EXE_tb/exeOut_reg[53]'
+INFO: [Synth 8-3886] merging instance 'i_0/MEM_tb/MEMout_reg[54]' (FD) to 'i_0/EXE_tb/exeOut_reg[54]'
+INFO: [Synth 8-3886] merging instance 'i_0/MEM_tb/MEMout_reg[55]' (FD) to 'i_0/EXE_tb/exeOut_reg[55]'
+INFO: [Synth 8-3886] merging instance 'i_0/MEM_tb/MEMout_reg[56]' (FD) to 'i_0/EXE_tb/exeOut_reg[56]'
+INFO: [Synth 8-3886] merging instance 'i_0/MEM_tb/MEMout_reg[57]' (FD) to 'i_0/EXE_tb/exeOut_reg[57]'
+INFO: [Synth 8-3886] merging instance 'i_0/MEM_tb/MEMout_reg[58]' (FD) to 'i_0/EXE_tb/exeOut_reg[58]'
+INFO: [Synth 8-3886] merging instance 'i_0/MEM_tb/MEMout_reg[59]' (FD) to 'i_0/EXE_tb/exeOut_reg[59]'
+INFO: [Synth 8-3886] merging instance 'i_0/MEM_tb/MEMout_reg[60]' (FD) to 'i_0/EXE_tb/exeOut_reg[60]'
+INFO: [Synth 8-3886] merging instance 'i_0/MEM_tb/MEMout_reg[61]' (FD) to 'i_0/EXE_tb/exeOut_reg[61]'
+INFO: [Synth 8-3886] merging instance 'i_0/MEM_tb/MEMout_reg[62]' (FD) to 'i_0/EXE_tb/exeOut_reg[62]'
+INFO: [Synth 8-3886] merging instance 'i_0/MEM_tb/MEMout_reg[63]' (FD) to 'i_0/EXE_tb/exeOut_reg[63]'
+INFO: [Synth 8-3886] merging instance 'i_0/ControlUnit_tb/m2reg_reg' (LD) to 'i_0/ControlUnit_tb/wreg_reg'
+INFO: [Synth 8-3886] merging instance 'i_0/ControlUnit_tb/aluc_reg[3]' (LD) to 'i_0/ControlUnit_tb/regrt_reg'
+INFO: [Synth 8-3886] merging instance 'i_0/ControlUnit_tb/regrt_reg' (LD) to 'i_0/ControlUnit_tb/aluc_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_0/ID_tb/IDout_reg[107]' (FD) to 'i_0/ID_tb/IDout_reg[108]'
+INFO: [Synth 8-3886] merging instance 'i_0/ID_tb/IDout_reg[99]' (FD) to 'i_0/ID_tb/IDout_reg[100]'
+INFO: [Synth 8-3886] merging instance 'i_0/ID_tb/IDout_reg[100]' (FD) to 'i_0/ID_tb/IDout_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/EXE_tb/exeOut_reg[70]' (FD) to 'i_0/EXE_tb/exeOut_reg[71]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\ControlUnit_tb/aluc_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ControlUnit_tb/aluc_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\ID_tb/IDout_reg[103] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ID_tb/IDout_reg[102] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\ControlUnit_tb/wreg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ID_tb/IDout_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ControlUnit_tb/wmem_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\ID_tb/IDout_reg[108] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\EXE_tb/exeOut_reg[68] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\ID_tb/IDout_reg[108] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\EXE_tb/exeOut_reg[68] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\ID_tb/IDout_reg[108] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:05 ; elapsed = 00:01:34 . Memory (MB): peak = 779.320 ; gain = 488.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+--------------+-----------+----------------------+---------------+
+|Module Name | RTL Object   | Inference | Size (Depth x Width) | Primitives    | 
++------------+--------------+-----------+----------------------+---------------+
+|testbench   | RF_tb/RF_reg | Implied   | 32 x 1               | RAM32M x 12   | 
++------------+--------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------+------------+----------+
+|      |RTL Partition      |Replication |Instances |
++------+-------------------+------------+----------+
+|1     |muxpart__5_DataMem |           1|     32736|
+|2     |DataMem__GB1       |           1|      7776|
+|3     |DataMem__GB2       |           1|     10144|
+|4     |DataMem__GB3       |           1|     11752|
+|5     |DataMem__GB4       |           1|      3970|
+|6     |DataMem__GB5       |           1|       500|
+|7     |DataMem__GB6       |           1|       584|
+|8     |testbench__GC0     |           1|       168|
++------+-------------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:06 ; elapsed = 00:01:34 . Memory (MB): peak = 798.445 ; gain = 507.707
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:06 ; elapsed = 00:01:34 . Memory (MB): peak = 798.445 ; gain = 507.707
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:08 ; elapsed = 00:01:36 . Memory (MB): peak = 798.445 ; gain = 507.707
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:08 ; elapsed = 00:01:36 . Memory (MB): peak = 798.445 ; gain = 507.707
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:08 ; elapsed = 00:01:36 . Memory (MB): peak = 798.445 ; gain = 507.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:08 ; elapsed = 00:01:36 . Memory (MB): peak = 798.445 ; gain = 507.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:08 ; elapsed = 00:01:36 . Memory (MB): peak = 798.445 ; gain = 507.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:08 ; elapsed = 00:01:36 . Memory (MB): peak = 798.445 ; gain = 507.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:08 ; elapsed = 00:01:36 . Memory (MB): peak = 798.445 ; gain = 507.707
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1035 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:08 ; elapsed = 00:01:37 . Memory (MB): peak = 798.445 ; gain = 507.707
+Synthesis Optimization Complete : Time (s): cpu = 00:01:08 ; elapsed = 00:01:37 . Memory (MB): peak = 798.445 ; gain = 507.707
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 821.984 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+162 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:13 ; elapsed = 00:01:44 . Memory (MB): peak = 821.984 ; gain = 531.246
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 821.984 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Ish/Documents/Vivado/Lab5_Ish/Lab5_Ish.runs/synth_1/testbench.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file testbench_utilization_synth.rpt -pb testbench_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Dec  1 00:11:38 2020...
